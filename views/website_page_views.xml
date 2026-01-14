@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="website_pages_form_view_inherit_lead_scoring" model="ir.ui.view">
+        <field name="name">website.page.form.inherit.lead.scoring</field>
+        <field name="model">website.page</field>
+        <field name="inherit_id" ref="website.website_pages_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='url']" position="after">
+                <field name="lead_score"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="website_pages_tree_view_inherit_lead_scoring" model="ir.ui.view">
+        <field name="name">website.page.list.inherit.lead.scoring</field>
+        <field name="model">website.page</field>
+        <field name="inherit_id" ref="website.website_pages_tree_view"/>
+        <field name="arch" type="xml">
+            <field name="website_url" position="after">
+                <field name="lead_score"/>
+            </field>
+        </field>
+    </record>
+</odoo>

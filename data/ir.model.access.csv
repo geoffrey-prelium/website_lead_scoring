@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_website_page_portal,website.page.portal,website.model_website_page,base.group_portal,1,1,0,0
+access_ir_ui_view_portal,ir.ui.view.portal,base.model_ir_ui_view,base.group_portal,1,1,0,0

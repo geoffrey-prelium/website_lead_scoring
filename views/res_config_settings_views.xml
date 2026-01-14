@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_inherit_lead_scoring" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.lead.scoring</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="website.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//block[@id='website_settings']" position="after">
+                <block title="Lead Scoring" id="lead_scoring_settings">
+                    <setting id="lead_scoring_thresholds" string="Scoring Thresholds" help="Define thresholds for Lead and MQL generation.">
+                        <div class="row mt16">
+                            <label for="lead_scoring_lead_threshold" class="col-lg-3 o_light_label"/>
+                            <field name="lead_scoring_lead_threshold"/>
+                        </div>
+                        <div class="row mt16">
+                            <label for="lead_scoring_mql_threshold" class="col-lg-3 o_light_label"/>
+                            <field name="lead_scoring_mql_threshold"/>
+                        </div>
+                        <div class="row mt16">
+                            <label for="lead_scoring_alert_user_id" class="col-lg-3 o_light_label"/>
+                            <field name="lead_scoring_alert_user_id"/>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>
