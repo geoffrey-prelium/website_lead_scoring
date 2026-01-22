@@ -1,6 +1,7 @@
 {
     'name': 'Website Lead Scoring',
     'version': '1.0',
+    'author': 'Prelium',
     'category': 'Website',
     'summary': 'Score website visitors based on page views and convert to leads.',
     'description': """
